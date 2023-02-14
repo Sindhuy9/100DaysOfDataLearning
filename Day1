@@ -1,0 +1,31 @@
+✅ What is Databricks?
+
+✍ Databricks is a cloud-based platform that operates as a lakehouse, leveraging the Apache Spark framework. It is available on multiple cloud platforms.
+
+✅ What is Lakehouse?
+
+✍ Lakehouse is an analytics platform that brings together the benefits of both data lakes and data warehouses. It provides the openness, flexibility, and machine learning capabilities of data lakes and the reliability, strong governance, and performance of data warehouses.
+
+✅ Architecture of Databricks Lakehouse
+
+✍ The Databricks Lakehouse architecture consists of three layers:
+cloud service, runtime, and workspaces.
+✍ Cloud service refers to customer cloud accounts such as AWS, Azure, and GCP. The runtime layer is powered by Apache Spark or Delta Lake, among other system libraries. Workspaces refer to interactive UI workbooks where data engineering, data warehousing, and machine learning workloads can be created.
+
+✅ How are Databricks resources created in the Cloud Provider?
+
+✍Databricks have two main components, the control plane, and the data plane.
+✍ The control plane is located within the Databricks account and contains elements such as the web user interface, cluster management, workflows, and notebooks.
+✍ The data plane, on the other hand, resides in the customer's cloud account and includes the storage account associated with the workspace. This is used for the Databricks file system to store data and files.
+✍ The storage and computing resources for a Spark cluster are also located in the data plane in the customer's cloud account.
+✍ Databricks provide the necessary tools for managing the infrastructure in the data plane.
+
+✅ Spark on Databricks
+
+✍Spark on Databricks is an in-memory, distributed data processing engine that supports a variety of programming languages, including Scala, Python, SQL, R, and Java. It allows for batch and stream processing of structured, semi-structured, and unstructured data.
+
+
+✅ What is DBFS(Databricks File System)?
+
+✍ DBFS, or the Databricks File System, is a distributed file system for storing data. ✍ It is preinstalled with the Databricks cluster and operates as an abstraction layer that uses underlying cloud storage, such as Azure storage or S3 buckets, to store data and files.
+✍ When a file is created in the cluster, DBFS stores it in the underlying cloud storage, and even if the cluster is terminated, the data remains saved in the cloud storage.
