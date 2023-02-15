@@ -1,0 +1,59 @@
+✳ What is a Cluster?
+
+ 👉 A cluster is a group of interconnected computers that work together as a single system to perform tasks or run applications. These computers, or nodes, are usually connected through a network and can communicate with each other to share resources and distribute workloads.
+
+👉 It consists of a master/driver node and a group of worker nodes.
+
+📌 Master Node: The driver/master node is responsible for coordinating the workers and their parallel execution of tasks.
+
+📌 Worker Node: The worker node is responsible for the completion of the tasks allocated.
+
+
+
+✳ Types of clusters available in Databricks
+
+👉 Single Node
+
+👉 Multi-Node
+
+📌 In a single-node cluster, there will no workers, and the spark jobs will run in the same node.
+
+
+
+✳ What is a Delta Lake?
+
+👉 Delta Lake is an open-source storage framework that brings reliability to data lakes.
+
+📌 Whenever a delta lake table is created in databricks cluster, a transactional log file will be added.
+
+
+
+✳ What is a transactional log of Delta Lake?
+
+👉 It is an ordered collection of every transaction performed on the table.
+
+👉 It acts as a single source of truth
+
+
+
+✳ What are the advantages of Delta Lake?
+
+👉 Brings ACID properties to the object storage
+
+👉 Handles the scalable metadata
+
+👉 Full audit trail of all changes
+
+👉 Builds upon standard data formats: Paraquet + JSON
+
+
+
+📌 ACID is an acronym that stands for Atomicity, Consistency, Isolation, and Durability.
+
+📌 Atomicity means that all transactions either succeed or fail completely.
+
+📌 Consistency guarantees relate to how a given state of the data is observed by simultaneous operations.
+
+📌 Isolation refers to how simultaneous operations potentially conflict with one another.
+
+📌 Durability means that committed changes are permanent.
