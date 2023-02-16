@@ -1,0 +1,20 @@
+✳ How to create a cluster in Databricks?
+👉 To create a cluster using Databricks UI, we need to be in Data Science and Engineering or Machine Learning persona.
+📌 Click on Compute on the left sidebar, then Create Compute on the compute Page.
+📌 Click New > Cluster to create the cluster.
+
+The user has the option to choose the policy type, access mode, node type, runtime, worker, and driver type configurations.
+
+📌 Policy: Cluster policies are a set of rules used to limit the configuration options available to users when they create a cluster.
+
+📌 Cluster Access mode: Access modes are as follows: Single User, Shared User, Custom.
+
+📌 Databricks Runtime: Databricks Runtime is the set of core components that run on your clusters. All Databricks Runtime versions include Apache Spark and add components and updates that improve usability, performance, and security.
+
+📌 Driver Node: The driver node maintains the state information of all notebooks attached to the cluster. The driver node also maintains the SparkContext, interprets all the commands you run from a notebook or a library on the cluster, and runs the Apache Spark master that coordinates with the Spark executors.
+
+📌 Worker Node: Databricks worker nodes run the Spark executors and other services required for proper functioning clusters. When you distribute your workload with Spark, all the distributed processing happens on worker nodes. Databricks runs one executor per worker node. Therefore, the terms executor and worker are used interchangeably in the context of the Databricks architecture.
+
+⭐ If autoscaling is enabled, we need to specify min and max worker nodes.
+
+⭐ Cluster will get auto-terminated if we configure the time for terminate after x minutes of inactivity.
